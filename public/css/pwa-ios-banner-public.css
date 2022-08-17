@@ -40,6 +40,8 @@
     display: block;
     margin: 0 auto;
     padding: 10px;
+    border-radius:10px;
+
 }
 
 .banner-text {
@@ -52,7 +54,7 @@
 .banner-text img {
     width: 18px;
     height: 23px;
-	margin: 0 5px;
+    margin: 0 5px;
 }
 
 .banner-text img.addtohome {

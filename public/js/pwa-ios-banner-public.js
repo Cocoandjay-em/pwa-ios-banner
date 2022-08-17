@@ -9,6 +9,7 @@ var miniOSVersionSupported = '11.3';
 
 var plugPath=jsVars.pluginURL;
 var webTitle=jsVars.websiteTitle;
+var iconURL =jsVars.iconURL;
 
 console.log(`iOS PWA Banner: Min iOS version supported: ${miniOSVersionSupported}`);
 
@@ -113,7 +114,7 @@ let BannerText = function( selectorOne, selectorTwo){
 let getBannerHtml = function( appName ){
     return `
     <div class="ios-pwa-banner hide-element">
-        <div class="app-icon"><img class="vertical-align" src="" /></div>
+        <div class="app-icon"><img class="vertical-align" src="`+iconURL+`" /></div>
         <div class="banner-text" style="display:flex !important; align-items: center;">
             <span class="banner-text-one">Tap to Install ${appName} to your home screen</span>
             <span class="banner-text-two hide-element">Tap <img src="`+plugPath+`/public/images/share-action-icon.png" /> and <img class="addtohome" src="`+plugPath+`/public/images/add-to-home-action-icon.png" /> "Add to homescreen"</span>
