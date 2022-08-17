@@ -81,47 +81,6 @@ class Pwa_Ios_Banner {
 
 	}
 
-	/* create admin panel */
-
-	add_action('admin_menu', 'pwa_ios_plugin_setup_menu');
- 
-	function pwa_ios_plugin_setup_menu(){
-	    add_menu_page( 'PWA IOS', 'PWA IOS Banner', 'manage_options', 'pwa-ios-banner', 'pwa_ios_init' );
-	}
-	 
-	function pwa_ios_init(){ ?>
-	    
-		<div class="wrap">
-        <h2>PWA IOS Banner - Settings</h2>
-        <form method="post" action="options.php">
-            <?php settings_fields('‘pwa_ios_plugin_options_group’'); ?>
- 
-        <table class="form-table">
-            <tr>
-                <th><label for="pwa_ios_icon_id">App Logo URL:</label></th>
-                <td>
-					<input type = 'text' class="regular-text" id="pwa_ios_icon_id" name="pwa_ios_icon" value="<?php echo get_option('pwa_ios_icon'); ?>">
-                </td>
-            </tr>
- 
-        </table>
- 
-        <?php submit_button(); ?>
- 
-    </div>
-
-	<?php 
-	}
-
-	/* handle settings */
-
-	function pwa_ios_plugin_register_settings() {
- 
-		register_setting(‘pwa_ios_plugin_options_group’, ‘pwa_ios_icon’);
-		 
-		}
-	add_action(‘admin_init’, pwa_ios_plugin_register_settings);
-
 	/**
 	 * Load the required dependencies for this plugin.
 	 *
