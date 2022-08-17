@@ -97,6 +97,10 @@ class Pwa_Ios_Banner_Public {
 		 */
 
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/pwa-ios-banner-public.js', array( 'jquery' ), $this->version, false );
+		$JSarray = array( 'pluginURL' => plugin_dir_url( __DIR__ ), 'websiteTitle' => get_bloginfo('name') );
+		wp_localize_script( $this->plugin_name, 'jsVars', $JSarray );
+
+
 
 	}
 
