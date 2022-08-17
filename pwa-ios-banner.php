@@ -8,16 +8,16 @@
  * @package           Pwa_Ios_Banner
  *
  * @wordpress-plugin
- * Plugin Name:       PWA IOS Banner
+ * Plugin Name:       Progressive Web App IOS Banner
  * Plugin URI:        https://cocoandjay.com
- * Description:       
+ * Description:       Add support for the IOS popup Banner with the instruction on how to save the PWA on their home screen
  * Version:           1.0.0
  * Author:            Coco and Jay
  * Author URI:        https://cocoandjay.com
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:       pwa-ios-banner
- * Domain Path:       /languages
+ * Domain Path:       /pwa-ios-banner
  */
 
 // If this file is called directly, abort.
