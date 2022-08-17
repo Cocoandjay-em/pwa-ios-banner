@@ -116,8 +116,8 @@ let getBannerHtml = function( appName ){
     <div class="ios-pwa-banner hide-element">
         <div class="app-icon"><img class="vertical-align" src="`+iconURL+`" /></div>
         <div class="banner-text" style="display:flex !important; align-items: center;">
-            <span class="banner-text-one">Tap to Install ${appName} to your home screen</span>
-            <span class="banner-text-two hide-element">Tap <img src="`+plugPath+`/public/images/share-action-icon.png" /> and <img class="addtohome" src="`+plugPath+`/public/images/add-to-home-action-icon.png" /> "Add to homescreen"</span>
+            <span class="banner-text-one">Tap to Install ${appName} on your iPhone or iPad</span>
+            <span class="banner-text-two hide-element">Tap on <img src="`+plugPath+`/public/images/share-action-icon.png" /> and then <img class="addtohome" src="`+plugPath+`/public/images/add-to-home-action-icon.png" /> "Add to Homescreen"</span>
         </div>
         <div class="closing-button">
             <img class="vertical-align" src="assets/images/pwa-ios/cancel.png" />
